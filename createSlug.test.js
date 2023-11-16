@@ -28,3 +28,11 @@ test('createSlug dovrebbe incrementare di 1 lo slug quando esiste già', ()=>{
 
     expect(result).toBe("torta-della-nonna(1)")
 })
+
+test("createSlug dovrebbe lanciare un errore in caso di titolo non presente o formato errato", () => {
+    // Siccome stiamo testando un errore, dobbiamo racchiudere la funzione
+    // in una arrow function, altrimenti il test fallirebbe
+    const result = () => createSlug('');
+
+    expect(result).toThrowError("createSlug: il titolo non esiste");
+})
