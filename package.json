@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "init": "^0.1.2",
+    "nodemon": "^3.0.1"
+  },
+  "name": "express-tdd",
+  "version": "1.0.0",
+  "description": "TDD",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Salvatore Brancato",
+  "license": "ISC"
+}
