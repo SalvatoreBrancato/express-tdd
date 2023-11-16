@@ -34,5 +34,5 @@ test("createSlug dovrebbe lanciare un errore in caso di titolo non presente o fo
     // in una arrow function, altrimenti il test fallirebbe
     const result = () => createSlug('');
 
-    expect(result).toThrowError("createSlug: il titolo non esiste");
+    expect(result).toThrowError("createSlug: il titolo non esiste o il formato è errato");
 })

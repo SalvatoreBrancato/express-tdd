@@ -10,7 +10,7 @@ module.exports= function (stringa){
     
     //lancia l'errore se il titolo non esiste
     if (!stringa || typeof stringa != "string" ) {
-        throw new Error("createSlug: il titolo non esiste");
+        throw new Error("createSlug: il titolo non esiste o il formato è errato");
       }
 
     //trasforma in stinga
