@@ -22,3 +22,9 @@ test('createSlug dovrebbe ritornare una stringa con gli spazi sostituiti da -', 
     expect(result).toBe("senza-spazio")
 })
 
+test('createSlug dovrebbe incrementare di 1 lo slug quando esiste già', ()=>{
+    const stringa = "torta-della-nonna"
+    const result = createSlug(stringa)
+
+    expect(result).toBe("torta-della-nonna(1)")
+})
