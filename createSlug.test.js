@@ -2,10 +2,10 @@ const {test, expect} = require("@jest/globals");
 const createSlug= require('./createSlug');
 
 test('createSlug dovrebbe ritornare una stringa', ()=>{
-    const stringa = 2 
+    const stringa = 'prova' 
     const result = createSlug(stringa);
 
-    expect(result).toBe("2");
+    expect(typeof result).toBe("string");
 }) 
 
 test('createSlug dovrebbe ritornare una stringa in lowercase', ()=>{
@@ -36,3 +36,5 @@ test("createSlug dovrebbe lanciare un errore in caso di titolo non presente o fo
 
     expect(result).toThrowError("createSlug: il titolo non esiste o il formato è errato");
 })
+
+
