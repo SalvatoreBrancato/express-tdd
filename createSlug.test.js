@@ -37,4 +37,9 @@ test("createSlug dovrebbe lanciare un errore in caso di titolo non presente o fo
     expect(result).toThrowError("createSlug: il titolo non esiste o il formato è errato");
 })
 
+test("createSlug dovrebbe lanciare un errore se manca l’array dei post", () => {
+    
+    const result = () => createSlug();
 
+    expect(result).toThrowError("createSlug: il titolo non esiste o il formato è errato");
+})
